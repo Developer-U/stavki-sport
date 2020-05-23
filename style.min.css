@@ -1,0 +1,1590 @@
+@font-face {
+  font-family: "PFDinDisplayPro-Black";
+
+  src: url("http://rielt.u0618804.plsk.regruhosting.ru/wp-content/themes/oceanwp/assets/fonts/PFDinDisplayPro-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PFDinDisplayPro-Bold";
+
+  src: url("http://rielt.u0618804.plsk.regruhosting.ru/wp-content/themes/oceanwp/assets/fonts/PFDinDisplayPro-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PFDinDisplayPro-Light";
+
+  src: url("http://rielt.u0618804.plsk.regruhosting.ru/wp-content/themes/oceanwp/assets/fonts/PFDinDisplayPro-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PFDinDisplayPro-Medium";
+
+  src: url("http://rielt.u0618804.plsk.regruhosting.ru/wp-content/themes/oceanwp/assets/fonts/PFDinDisplayPro-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PFDinDisplayPro-Regular";
+
+  src: url("http://rielt.u0618804.plsk.regruhosting.ru/wp-content/themes/oceanwp/assets/fonts/PFDinDisplayPro-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PFDinDisplayPro-Thin";
+
+  src: url("http://rielt.u0618804.plsk.regruhosting.ru/wp-content/themes/oceanwp/assets/fonts/PFDinDisplayPro-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "fontello";
+
+  src: url("http://rielt.u0618804.plsk.regruhosting.ru/wp-content/themes/oceanwp/assets/fonts/fontello.woff") format("woff");
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "PFDinDisplayPro-Medium";
+  font-style: normal;
+  line-height: 26px;
+  color: #242526;
+  background-color: #fff;
+}
+
+* , *::before , *::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 38px;
+  font-family: "PFDinDisplayPro-Bold";
+  line-height: 46px;
+  color: #fff;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "PFDinDisplayPro-Medium";
+  line-height: 22px;
+  color: #242526;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "PFDinDisplayPro-Regular";
+  line-height: 25px;
+  color: #242526;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.list-reset , p {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.flex-center-between {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-start-between {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.flex-start-start {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.flex-stretch-start {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.flex-stretch-between {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.fixed-container {
+  overflow: hidden;
+  overflow-y: hidden;
+  width: 1140px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .fixed-container {
+    width: 86%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .fixed-container {
+    width: 90%;
+  }
+}
+
+figure {
+  margin: 0;
+  font-style: normal;
+}
+
+
+/* Стили для кнопок */
+
+.test-nav {
+  width: 88%;
+  margin: 10vh auto;
+}
+
+@media screen and (max-width: 1366px) {
+  .test-nav {
+    width: 90%;
+  }
+}
+
+.test-nav__list {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 60px;
+}
+
+.test-nav__items {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 18%;
+  min-height: 40px;
+  margin-right: 1.5%;
+  padding: 10px 4%;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 1440px) {
+  .test-nav__items {
+    padding: 10px 4% 10px 2%;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .test-nav__items {
+    font-size: 16x;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .test-nav__items {
+    width: 26%;
+    margin-right: 3.5%;
+    margin-bottom: 3vh;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .test-nav__items {
+    width: 44%;
+    min-height: 60px;
+    padding: 10px 8% 10px 2%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .test-nav__items {
+    width: 100%;
+    margin-right: 0;
+    padding: 10px 10% 10px 4%;
+  }
+}
+
+.blue-back {
+  background-color: #1e88e5;
+}
+
+.green-back {
+  background-color: #2f8f41;
+}
+
+.red-back {
+  background-color: #f83030;
+}
+
+.blue-border {
+  border: 1px solid #1e88e5;
+  color: #060809;
+  background-color: transparent;
+}
+
+
+.test-nav__navigator {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 13px;
+  right: 6%;
+  width: 17px;
+  height: 13px;
+  background-image: url("http://rielt.u0618804.plsk.regruhosting.ru/wp-content/uploads/2020/05/arrow-down.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: .3;
+  cursor: pointer;
+}
+
+.test-nav__navigator:active , .test-nav__navigator:hover , .test-nav__navigator:focus {
+  opacity: .6;
+  transition: .3;
+}
+
+.worksMenu , .versions , .pay-sistems , .limit-menu , .min-menu {
+  display: table;
+  visibility: hidden;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 9999;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  min-width: 200px;
+  opacity: 0;
+  background-color: transparent;
+  transition: visibility:.6s, opacity:.6s;
+}
+
+.limit-unset {
+  display: table;
+  visibility: hidden;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 99999;
+  top: 130%;
+  left: 0;
+  width: 100%;
+  min-width: 200px;
+  opacity: 0;
+  background-color: transparent;
+}
+
+.worksMenu_open , .versions_open , .pay-sistems_open , .limit-menu_open , .limit-unset_open , .min-menu_open {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility:.3s, opacity:.3s;
+}
+
+.worksItems {
+  width: 100%;
+}
+
+.worksItems__item , .worksItems__item-a , .versions__item , .pay-sistems__item , .limit-menu__item , .limit-unset__item , .min-menu__item {
+  width: 100%;
+  margin-bottom: 2px;
+  padding: 10px 4%;
+  border: none;
+  background-color: rgba(222, 226, 227, .95);
+  border-radius: 3px;
+}
+
+.limit-unset__item {
+  background-color: rgba(222, 226, 227, .6);
+}
+
+.limit-menu__item {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.worksItems__item_active , .versions__item_active , .pay-sistems__item_active , .limit-menu__item_active , .min-menu__item_active {
+  margin: 0 auto;
+  padding: 10px 4%;
+  border: none;
+  border: none;
+}
+
+.worksItems__item_active , .limit-menu__item_active , .min-menu__item_active {
+  background-color: #1e88e5;
+}
+
+
+.versions__item_active {
+  background-color: #2f8f41;
+}
+
+.pay-sistems__item_active {
+  background-color: #f83030;
+}
+
+.min-menu__item_active {
+  background-color: #fff;
+}
+
+
+.worksItems__link , .versions__link , .pay-sistems__link , .limit-menu__link , .limit-unset__link , .min-menu__link {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1e88e5;
+}
+
+.limit-unset__link {
+  color: #060809;
+}
+
+.contain-main {
+  width: 60%;
+  margin: 15% auto;
+  padding: 1.5% 6%;
+  background-image: url(http://rielt.u0618804.plsk.regruhosting.ru/wp-content/uploads/2020/05/Rectangle.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contain-main__link {
+  text-decoration: underline;
+}
+
+
+
+/* header */
+
+.top-bar {
+  width: 100%;
+  padding: 5.5px 0;
+  background-color: #121212;
+}
+
+.registration {
+  width: 30%;
+}
+
+.top-bar__link {
+  font-size: 14px;
+  font-family: "PFDinDisplayPro-Medium";
+  line-height: 18px;
+  color: #fff;
+}
+
+.top-bar__social {
+  width: 15.5%;
+}
+
+@media screen and (max-width: 1200px) {
+  .top-bar__social {
+    width: 24%;
+  }
+}
+
+.top-bar__icons {
+  width: 44%;
+}
+
+.top-bar__icon {
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.vk {
+  width: 22px;
+  height: 13px;
+  background-image: url("http://rielt.u0618804.plsk.regruhosting.ru/wp-content/uploads/2020/05/icons/Vk.png");
+  background-size: 22px 13px;
+}
+
+.telegram {
+  width: 16px;
+  height: 16px;
+  background-image: url("http://rielt.u0618804.plsk.regruhosting.ru/wp-content/uploads/2020/05/icons/Tg.png");
+  background-size: 16px 16px;
+}
+
+.instagram {
+  width: 16px;
+  height: 16px;
+  background-image: url("http://rielt.u0618804.plsk.regruhosting.ru/wp-content/uploads/2020/05/icons/Insta.png");
+  background-size: 16px 16px;
+}
+
+.middle-bar {
+  padding: 15px 0;
+}
+
+@media screen and (max-width: 840px) {
+  .top-bar , .middle-bar {
+    display: none;
+  }
+}
+
+.logo-bar {
+  width: 20%;
+  margin-top: 10px;
+}
+
+.logo-bar-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .logo-bar {
+    width: 100%;
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .logo-bar-mobile {
+    display: block;
+    width: 70%;
+  }
+}
+
+.logo-bar__logo1 , .logo-bar__logo2 {
+  font-size: 32px;
+  font-weight: 900;
+  font-family: "PFDinDisplayPro-Bold";
+  font-style: normal;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.logo-bar__logo1 {
+  color: #242526;
+}
+
+.logo-mobile {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.logo-bar__logo2 {
+  color: #2f8f41;
+}
+
+.middle-bar__banner {
+  width: 728px;
+  height: 90px;
+}
+
+@media screen and (max-width: 1200px) {
+  .middle-bar__banner {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .middle-bar__banner {
+    display: none;
+  }
+}
+
+.bottom-bar {
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 992px) {
+  .bottom-bar {
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bottom-bar {
+    padding: 16px 0;
+  }
+}
+
+.bottom-bar__menu {
+  display: table;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 52%;
+}
+
+@media screen and (max-width: 1200px) {
+  .bottom-bar__menu {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .bottom-bar__menu {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .bottom-bar__menu {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .bottom-bar__menu {
+    display: table;
+    visibility: hidden;
+    overflow-y: auto;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    min-height: 300px;
+    opacity: 0;
+    background-color: #211f2e;
+    transition: .3s;
+  }
+
+  .bottom-bar__menu_open {
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+  }
+}
+
+
+
+/*----Кнопка бургера-----*/
+
+.headerBurger {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .headerBurger {
+    display: block;
+  }
+}
+
+
+/*---Элементы бургера---*/
+
+.headerBurger span {
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #3e3f43;
+}
+
+.headerBurger span:nth-child(2) {
+  margin: 7px 0;
+}
+
+
+/*----Кнопка закрытия бургера-----*/
+
+.headerNavClose {
+  display: none;
+  position: relative;
+}
+
+.headerNavClose span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 3px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  .headerNavClose {
+    display: block;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .headerNavClose span:first-child {
+    transform: rotate(45deg);
+  }
+
+  .headerNavClose span:last-child {
+    transform: rotate(-45deg);
+  }
+} 
+
+
+.bottom-bar__list {
+  width: 100%;
+  min-height: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .bottom-bar__list {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+  }
+}
+
+.bottom-bar__item {
+  display: inline-block;
+  margin: 0;
+  padding: 15px 11px 1px 11px;
+  font-size: 0;
+}
+
+.bottom-bar__item:nth-of-type(1) {
+  padding-left: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .bottom-bar__item {
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .bottom-bar__item {
+    margin-bottom: 6px;
+  }
+}
+
+.bottom-bar__link {
+  font-size: 15px;
+  font-family: "PFDinDisplayPro-Bold";
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: .005em;
+  color: #212121;
+}
+
+@media screen and (max-width: 992px) {
+  .bottom-bar__link {
+    z-index: 9999;
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #fff;
+  }
+}
+
+.bottom-bar__buttons {
+  width: 26%;
+}
+
+@media screen and (max-width: 1200px) {
+  .bottom-bar__buttons {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .bottom-bar__buttons {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .bottom-bar__buttons {
+    justify-content: flex-end;
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .bottom-bar__buttons {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .bottom-bar__buttons {
+    width: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bottom-bar__buttons {
+    width: 10%;
+  }
+}
+
+.bottom-bar__video {
+  width: 116px;
+  min-height: 32px;
+  padding: 5px 12px 2.5px 12px;
+  background-color: #cd201f;
+  border-radius: 3px;
+}
+
+
+@media screen and (max-width: 840px) {
+  .bottom-bar__video {
+    display: none;
+  }
+}
+
+.bottom-bar__youtube {
+  width: 23px;
+  height: auto;
+  margin-right: 2px;
+}
+
+.bottom-bar__text , .bottom-bar__text2 {
+  vertical-align: text-top;
+  font-size: 15px;
+  font-family: "PFDinDisplayPro-Bold";
+  line-height: 18px;
+  letter-spacing: .005em;
+}
+
+.bottom-bar__text {
+  color: #fff;
+}
+
+.bottom-bar__text2 {
+  color: #242526;
+}
+
+.bottom-bar__google {
+  width: 135px;
+  min-height: 32px;
+  padding: 5px 5px 1.5px 12px;
+  border: 1px solid #9a9d9f;
+  background-color: #f5f5f5;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 1100px) {
+  .bottom-bar__google {
+    display: none;
+  }
+}
+
+.bottom-bar__googlePay {
+  margin-right: 2px;
+}
+
+.bottom-bar__search {
+  width: 32px;
+  height: 32px;
+  background-color: #2f8f41;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 1100px) {
+  .bottom-bar__search {
+    margin-left: 6px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .bottom-bar__search {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.search {
+  width: 100%;
+  height: 100%;
+  background-image: url("http://rielt.u0618804.plsk.regruhosting.ru/wp-content/uploads/2020/05/icons/search.svg");
+  background-size: 20px 20.75px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 840px) {
+  .search {
+    background-color: transparent;
+    background-image: url("http://rielt.u0618804.plsk.regruhosting.ru/wp-content/uploads/2020/05/icons/search-mobile.svg");
+    background-size: 20px 20px;
+  }
+}
+
+
+
+/* main-content */
+
+.main-banner {
+  width: 100%;
+  padding: 16px 0 34px 0;
+  text-align: center;
+  color: #fff;
+  background-image: url("http://rielt.u0618804.plsk.regruhosting.ru/wp-content/uploads/2020/05/Rectangle.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-banner__heading {
+  margin-bottom: 20px;
+}
+
+.main-banner__paragraph , .main-banner__paragraph-mobile {
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+  color: #dfe4e6;
+}
+
+@media screen and (max-width: 600px) {
+  .main-banner__paragraph {
+    display: none;
+  }
+}
+
+.main-banner__paragraph-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .main-banner__paragraph-mobile {
+    display: block;
+  }
+}
+
+.main-nav {
+  width: 100%;
+  padding: 15px 0;
+  background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 1366px) {
+  .main-nav {
+    padding: 0;
+  }
+}
+
+.main-nav__list {
+  width: 48%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1910px) {
+  .main-nav__list {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .main-nav__list {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .main-nav__list {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto 0 0;
+    font-size: 0;
+  }
+}
+
+.main-nav__item {
+  display: inline-block;
+  min-height: 20px;
+  margin-right: 10px;
+  padding: 2px 14px;
+  border: 1px solid #b2b7ba;
+  background: #e3e4e5;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1366px) {
+  .main-nav__item {
+    min-height: 45px;
+    margin-right: 0;
+    padding: 10px 20px 4px 20px;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-nav__item {
+    width: 100%;
+    min-height: 50px;
+    padding: 14px 20px 4px 20px;
+  }
+}
+
+.main-nav__link {
+  font-size: 16px;
+  font-family: "PFDinDisplayPro-Bold";
+  line-height: 19px;
+  color: #3f4143;
+}
+
+.webmoney {
+  padding-left: 26px;
+  background-image: url("http://rielt.u0618804.plsk.regruhosting.ru/wp-content/uploads/2020/05/icons/Webmoney.png");
+  background-size: 18px 18px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.yandex {
+  padding-left: 26px;
+  background-image: url("http://rielt.u0618804.plsk.regruhosting.ru/wp-content/uploads/2020/05/icons/yandex.png");
+  background-size: 18px 24px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.main-nav__item:nth-last-of-type(1) {
+  margin-right: 0;
+}
+
+.main-nav__item:active {
+  opacity: .6;
+}
+
+.main-nav__item:hover , .main-nav__item:focus {
+  border: 1px solid #1e88e5;
+  background-color: rgba(30, 136, 229, .1);
+}
+
+
+.main-content {
+  width: 100%;
+  padding: 33px 0;
+}
+
+.main-content-articles {
+  width: 750px;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-content-articles {
+    margin: 0 auto;
+  }
+}
+
+.bonuses , .bonuses__contain {
+  width: 100%;
+  height: fit-content;
+}
+
+.bonuses {
+  margin-bottom: 30px;
+}
+
+.bonuses__imageblock {
+  width: 31%;
+  height: auto;
+  padding: 0 0 5px 0;
+  background: linear-gradient(to top, #020405 2%, #020405 5%, #103c60 45%);
+}
+
+@media screen and (max-width: 840px) {
+  .bonuses__imageblock {
+    display: none;
+  }
+}
+
+.bonuses__imageblock img {
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+.bonuses-activ {
+  display: block;
+  max-width: 85%;
+  margin: 10px auto;
+  padding: .2px 5%;
+  border: 1px solid #fff;
+  text-align: center;
+  font-size: 14px;
+  font-family: "PFDinDisplayPro-Bold";
+  line-height: 23px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.bonuses-content {
+  width: 69%;
+  min-height: 251px;
+  padding-bottom: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+@media screen and (max-width: 840px) {
+  .bonuses-content {
+    width: 100%;
+  }
+}
+
+.bonuses-top {
+  width: 100%;
+  padding: 14px 5% 10px 2%;
+  border: 1px solid #e0e0e0;
+  background-color: #fafafa;
+}
+
+.bonuses-content__identity {
+  max-width: 28%;
+  margin-bottom: 10px;
+  padding: 1px 3%;
+  font-size: 14px;
+  font-family: "PFDinDisplayPro-Bold";
+  line-height: 25px;
+  color: #fff;
+  background-color: #4caf50;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 840px) {
+  .bonuses-content__identity {
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: #1e88e5;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .bonuses-content__identity {
+    max-width: 60%;
+  }
+}
+
+.bonuses-main {
+  width: 100%;
+  padding: 10px 2% 0 2%;
+}
+
+.bonuses-inside {
+  width: 33.3%;
+}
+
+@media screen and (max-width: 840px) {
+  .bonuses-inside {
+    display: none;
+  }
+}
+
+.bonuses-inside-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 840px) {
+  .bonuses-inside-mobile {
+    display: block;
+    width: 40%;
+  }
+}
+
+.bonuses-inside__heading {
+  margin-bottom: -1px;
+}
+
+.bonuses-inside__text {
+  margin-bottom: 2px;
+  font-size: 14px;
+  font-family: "PFDinDisplayPro-Black";
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #242526;
+}
+
+.bonuses-inside__result , .bonuses-inside__result2 {
+  max-width: 90%;
+  min-height: 20px;
+  margin-top: 10px;
+  border: 1px solid #1e88e5;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.bonuses-inside__result {
+  padding: 5px 20px;
+  background-color: #1e88e5;
+}
+
+.bonuses-inside__result2 {
+  padding: 5px 12px;
+  background-color: transparent;
+}
+
+.result-name , .result-name2 , .bonuses-inside__button , .bonuses-inside__button-mob {
+  font-size: 16px;
+  font-family: "PFDinDisplayPro-Bold";
+  line-height: 19px;
+}
+
+.result-name , .bonuses-inside__button , .bonuses-inside__button-mob {
+  color: #fff;
+}
+
+.result-name2 {
+  color: #242526;
+}
+
+.bonuses-inside__button {
+  max-width: 90%;
+  min-height: 20px;
+  margin-top: 10px;
+  padding: 5px 40px;
+  border: 1px solid #f83030;
+  background-color: #f83030;
+  border-radius: 3px;
+}
+
+.bonuses-inside__button-mob {
+  display: none;
+}
+
+@media screen and (max-width: 840px) {
+  .bonuses-inside__button-mob {
+    display: block;
+    width: 100%;
+    max-width: none;
+    min-height: 35px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 5px 40px;
+    border: 1px solid #f83030;
+    background-color: #f83030;
+    border-radius: 3px;
+  }
+}
+
+.inside-container {
+  width: 100%;
+  padding: 10px 2%;
+}
+
+.conditions {
+  width: 100%;
+  padding: 6px 20% 10px 2%;
+  border: 1px solid #e0e0e0;
+  background-color: #fafafa;
+}
+
+.conditions__link {
+  padding-bottom: 5px;
+  border-bottom: 1px #2f8f41 dotted;
+  font-size: 16px;
+  font-family: "PFDinDisplayPro-Medium";
+  line-height: 30px;
+  color: #242526;
+  transition: .5s;
+}
+
+.conditions__link:hover , .conditions__link:focus {
+  color: #1e88e5;
+  transition: .5s;
+}
+
+
+/* sidebar */
+
+.right-sidebar {
+  width: 360px;
+}
+
+@media screen and (max-width: 1200px) {
+  .right-sidebar {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+
+.sidebar {
+  width: 100%;
+}
+
+.top {
+  margin-top: 26px;
+}
+
+.sidebar__name {
+  max-width: 48.5%;
+  min-height: 35px;
+  padding: 1px 4%;
+  background: #121212;
+}
+
+@media screen and (max-width: 1200px) {
+  .sidebar__name {
+    max-width: 28.5%;
+    padding: 1px 20px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .sidebar__name {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .sidebar__name {
+    max-width: none;
+  }
+}
+
+.sidebar__heading {
+  text-align: center;
+  font-size: 13px;
+  font-family: "PFDinDisplayPro-Black";
+  line-height: 35px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.sidebar-content , .sidebar-reviews {
+  width: 100%;
+  background: #fafafa;
+}
+
+.sidebar-content {
+  padding: 20px 4.6%;
+  border-top: 1px solid #000;
+}
+
+@media screen and (max-width: 1200px) {
+  .sidebar-content {
+    padding: 20px 3%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .sidebar-content {
+    padding: 20px 0;
+  }
+}
+
+.sidebar-content__item {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+@media screen and (max-width: 840px) {
+  .sidebar-content__item {
+    flex-flow: row nowrap;
+    margin-bottom: 13px;
+  }
+}
+
+.sidebar-content__logo {
+  width: 31.5%;
+  height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .sidebar-content__logo {
+    width: 100px;
+    height: auto;
+  }
+}
+
+.sidebar-content__logo img {
+  width: 100%;
+  height: auto;
+}
+
+.sidebar-text-block {
+  width: 65%;
+}
+
+@media screen and (max-width: 1200px) {
+  .sidebar-text-block {
+    width: 83%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .sidebar-text-block {
+    width: 78%;
+    margin-left: 10px;
+  }
+}
+
+.sidebar-rating-contain {
+  width: 100%;
+}
+
+.sidebar-left {
+  width: 60%;
+}
+
+.sidebar-text-block__heading {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-family: "PFDinDisplayPro-Black";
+  line-height: 18px;
+}
+
+.sidebar-text-block__rating {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 15px;
+  color: #9a9d9f;
+}
+
+.sidebar-right {
+  max-width: 68px;
+  height: 30px;
+  padding: 5px 10px 1px 10px;
+  background-color: #faab00;
+  border-radius: 3px;
+}
+
+.sidebar-text-block__text {
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+}
+
+.sidebar-text-block__text::before {
+  content: "\e800";
+  font-family: "fontello";
+}
+
+.sidebar__button {
+  width: 100%;
+  padding: 5px 5%;
+  text-align: center;
+  font-size: 16px;
+  font-family: "PFDinDisplayPro-Black";
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #2f8f41;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 840px) {
+  .sidebar__button {
+    padding: 8px 5%;
+  }
+}
+
+.sidebar-content__more , .sidebar-reviews__more {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sidebar-content__more {
+  padding: 10px 10% 4px 10%;
+  border-top: 1px solid #e0e0e0;
+}
+
+.sidebar-reviews__more {
+  padding: 2px 10% 4px 10%;
+}
+
+.sidebar-content__text {
+  display: block;
+  font-size: 16px;
+  font-family: "PFDinDisplayPro-Bold";
+  line-height: 22px;
+}
+
+.sidebar-content__text::after {
+  content: " \f054";
+  font-family: "fontello";
+}
+
+.sidebar-reviews {
+  padding: 10px;
+  border-top: 1px solid #000;
+}
+
+.sidebar-reviews__item {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 16px 2% 19px 2%;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+}
+
+.sidebar-reviews__top-bar {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.sidebar-reviews__heading {
+  font-size: 18px;
+  font-family: "PFDinDisplayPro-Black";
+  line-height: 21px;
+}
+
+.sidebar-reviews__paragraph {
+  overflow: hidden;
+  height: 75px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.sidebar-reviews__link {
+  text-decoration: underline;
+  color: #1e88e5;
+}
+
+.sidebar-reviews__bottom-bar {
+  width: 100%;
+}
+
+.sidebar-reviews__user , .sidebar-reviews__time {
+  min-height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #999;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.sidebar-reviews__user {
+  width: 45%;
+  padding-left: 20px;
+  background-image: url("http://rielt.u0618804.plsk.regruhosting.ru/wp-content/uploads/2020/05/icons/user.svg");
+  background-size: 12.5px 14px;
+}
+
+.sidebar-reviews__time {
+  width: 38%;
+  padding-left: 20px;
+  background-image: url("http://rielt.u0618804.plsk.regruhosting.ru/wp-content/uploads/2020/05/icons/time.svg");
+  background-size: 13.8px 13.8px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.bonuses-top-mobile {
+  width: 100%;
+}
+
+.bonuses__imageblock-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 840px) {
+  .bonuses__imageblock-mobile {
+    display: block;
+    width: 22%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .bonuses-content__heading {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .bonuses__imageblock-mobile img {
+    width: 100%;
+  }
+}
+
+.conditions-more1 , .conditions-more2 , .conditions-more3 , .main-banner-more {
+  display: none;
+  visibility: hidden;
+  overflow-y: auto;
+  width: 100%;
+  padding-top: 30px;
+  opacity: 0;
+  transition: visibility:.6s, opacity:.8s;
+}
+
+.conditions-more1_open , .conditions-more2_open , .conditions-more3_open , .main-banner-more_open {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility:.3s, opacity:.8s;
+}
+
+.bonuses-mobile-text {
+  font-family: "PFDinDisplayPro-Light";
+  text-decoration: underline;
+  opacity: .9;
+  color: #1e88e5;
+}
+
+.slider-heading {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.slider-heading2 {
+  text-align: center;
+  font-size: 18px;
+  color: #020405;
+}
+
+.to-main {
+  width: 40%;
+  margin: 30px auto;
+  padding: 10px 5px;
+}
